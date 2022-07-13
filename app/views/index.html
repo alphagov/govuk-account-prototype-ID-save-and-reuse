@@ -1,0 +1,136 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Identity save and reuse prototype
+      </h1>
+
+      <h2 class="govuk-heading-m">Journey 1</h2>
+      <p>User needs a DBS check they do not have a GOV.UK account.</p>
+      <a href="govuk/dbs-service-start" class="govuk-button">Start journey 1</a>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Links
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+        <ul class="govuk-list">
+          <h4 class="govuk-heading-s">GOV.UK</h4>
+          <li>
+            <a href="govuk/dbs-service-start">Request a basic DBS check</a>
+          </li>
+          <h4 class="govuk-heading-s govuk-!-margin-top-4">Prove your identity</h4>
+          <li>
+            <a href="govuk/dbs-service-start">Prove your identity to continue NOT CREATED</a>
+          </li>
+          <h4 class="govuk-heading-s govuk-!-margin-top-4">Authentication</h4>
+          <li>
+            <a href="/auth/v9/gov-account">Create a GOV.UK account or sign in</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-email">Enter your email address</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-checkemail">Check your email</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-password">Create your password</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-entermobile">Enter your mobile phone number</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-checkphone">Check your phone</a>
+          </li>
+          <li>
+            <a href="/auth/v9/create-success">You’ve created your GOV.UK account</a>
+          </li>
+          <h4 class="govuk-heading-s govuk-!-margin-top-4">Prove your identity</h4>
+          <li>
+            <a href="/pyi/mvp/passport-details">Enter your details exactly as they appear on your UK passport</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/address-postcode-current">Find your address</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/address-picker-current">Choose your address</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/address-manual-current">Enter your address</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/address-check">Confirm your details</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/kbv-start">Answer security questions</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/kbv-question-1">KBV - How much did you borrow when you first took out your mortgage?</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/kbv-question-2">KBV - How much is your monthly mortgage payment?</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/kbv-question-3">KBV - When did you open one of your current accounts?</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/kbv-question-4">KBV - When did you take out your mobile phone contract?</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/success">You've successfully proved your identity</a>
+          </li>
+          <li>
+            <a href="/pyi/mvp/saved">You’ve saved your proof of identity to your GOV.UK account</a>
+          </li>
+          <h4 class="govuk-heading-s govuk-!-margin-top-4">Service - DBS</h4>
+          <li>
+            <a href="/service/dbs/mvp/dbs-opt-in">Apply for a basic DBS check</a>
+          </li>
+        </ul>
+        </div>
+      </details>
+
+
+      <h2 class="govuk-heading-m">Journey 2</h2>
+      <p>User has a GOV.UK account with an ID saved in it that they can reuse for other services.</p>
+      <a href="#" class="govuk-button">Start journey 2</a>
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Links
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+        <ul class="govuk-list">
+          <h4 class="govuk-heading-s">GOV.UK</h4>
+          <li>
+            <a href="#">Personal tax account: sign in or set up</a>
+          </li>
+          <h4 class="govuk-heading-s govuk-!-margin-top-4">Authentication</h4>
+          <li>
+            <a href="#">Create a GOV.UK account or sign in</a>
+          </li>
+          <li>
+            <a href="#">Enter email</a>
+          </li>
+        </div>
+      </details>
+
+
+      <h2 class="govuk-heading-m">Journey 3</h2>
+      <p>User has a GOV.UK account and has granted access to their proof of identity in the past.</p>
+      <a href="#" class="govuk-button">Start journey 3</a>
+
+    </div>
+  </div>
+
+{% endblock %}

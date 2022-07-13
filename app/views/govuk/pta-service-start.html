@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Request a basic DBS check
+{% endblock %}
+
+{% block header %}
+{{ govukHeader({
+homepageUrl: "/",
+serviceName: "",
+serviceUrl: "/",
+containerClasses: "govuk-width-container"
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="javascript:void(0)">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="javascript:void(0)">Working, jobs and pensions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="javascript:void(0)">Finding a job</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Personal tax account: sign in or set up
+    </h1>
+
+    <p>Use your personal tax account to check your records and manage your details with HM Revenue and Customs (HMRC).</p>
+
+      <p>This page is also available in Welsh (<a href="javascript:void(0)">Cymraeg</a>).</p>
+
+    <p>To use personal tax account, you’ll need to prove your identity with a GOV.UK account. If you do not have a GOV.UK account you’l be able to create one.</p>
+
+    <div class="govuk-inset-text">
+      <p>There’s a different service to <a href="#">file your Self Assessment tax return</a> or <a href="#">report and pay Capital Gains Tax on UK property</a>.</p>
+    </div>
+
+    <form class="form" action="/auth/v9/gov-account.html" method="get">
+      <div class="govuk-form-group">
+        <input class="govuk-input" id="service" name="service" type="hidden" value="dbs">
+        <button class="govuk-button no-mar-bot govuk-button--start" data-module="govuk-button">
+          Start now
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg>
+        </button>
+      </div>
+    </form>
+
+    <h3 class="govuk-heading-m">What you need to know</h3>
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+{% endblock %}
