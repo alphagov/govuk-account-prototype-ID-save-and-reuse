@@ -19,3 +19,14 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.service-card {
+  border: 1px solid #b1b4b6;
+  border-top: 4px solid #1d70b8;
+  padding: 20px;
+}
+
+.accounts-blurb {
+  background-color: #f3f2f1;
+  padding: 20px;
+}

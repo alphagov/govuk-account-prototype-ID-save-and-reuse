@@ -1,0 +1,36 @@
+{% set hideAccountMenu = true %}
+{% set current = "home" %}
+{% block pageTitle %}
+  Your GOV.UK account - GOV.UK account - GOV.UK
+{% endblock %}
+{% extends "account/_account.html" %}
+{% block account %}
+
+<h1 class="govuk-heading-l govuk-!-margin-top-4">Your GOV.UK account</h1>
+
+  <p class="govuk-body accounts-your-account__email govuk-!-margin-bottom-6">
+    You're signed in as <span class="govuk-!-font-weight-bold">your.name@example.com</span>
+  </p>
+
+
+  <div class="accounts-panel govuk-!-margin-bottom-6">
+  <h2 class="gem-c-heading govuk-heading-m">Services you’ve used with your GOV.UK account</h2>
+
+  <div class="service-card ">
+    <h3 class="govuk-heading-s">Personal tax account</h3>
+    <p>Check your records and manage your payments to HM Revenue and Customs (HMRC).</p>
+    <p class="govuk-!-margin-bottom-4"><a href="#" class="govuk-body govuk-link">Go to your personal tax account</a></p>
+    <p class="govuk-caption-m govuk-!-margin-bottom-0">Last used: 20 June  2022</p>
+  </div>
+
+  </div>
+
+<br>
+
+<div class="accounts-blurb">
+  <h3 class="govuk-heading-m">About GOV.UK accounts</h3>
+  <p class="govuk-body"class>GOV.UK accounts are new. At the moment you can only use your GOV.UK account with a few services.</p>
+  <p class="govuk-body"class>GOV.UK accounts are currently separate from other government accounts (for example Government Gateway or Universal Credit).</p>
+  <p class="govuk-body ">In the future, you'll be able to use your GOV.UK account to sign in to most services on GOV.UK.</p>
+</div>
+{% endblock %}

@@ -7942,3 +7942,14 @@ x:-moz-any-link {
     margin-bottom: 0;
   }
 }
+
+.service-card {
+  border: 1px solid #b1b4b6;
+  border-top: 4px solid #1d70b8;
+  padding: 20px;
+}
+
+.accounts-blurb {
+  background-color: #f3f2f1;
+  padding: 20px;
+}
