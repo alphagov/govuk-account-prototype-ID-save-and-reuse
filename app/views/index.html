@@ -13,10 +13,11 @@
         Identity save and reuse prototype
       </h1>
 
-      <h2 class="govuk-heading-m">Journey 1</h2>
-      <p>User needs a DBS check they do not have a GOV.UK account.</p>
-      <a href="govuk/dbs-service-start" class="govuk-button">Start journey 1</a>
-      <details class="govuk-details" data-module="govuk-details">
+      <div class="tasks">
+      <div class="task-block">
+      <h2 class="govuk-heading-s">1. User needs a DBS check they do not have a GOV.UK account.</h2>
+      <a href="govuk/dbs-service-start" class="govuk-button">Start task 1</a>
+      <details class="govuk-details govuk-!-margin-bottom-0" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
             Links
@@ -98,12 +99,12 @@
         </ul>
         </div>
       </details>
+      </div>
 
-
-      <h2 class="govuk-heading-m">Journey 2</h2>
-      <p>User has a GOV.UK account with an ID saved in it that they can reuse for other services.</p>
-      <a href="/govuk/pta-service-start" class="govuk-button">Start journey 2</a>
-      <details class="govuk-details" data-module="govuk-details">
+      <div class="task-block">
+      <h2 class="govuk-heading-s">2. User has a GOV.UK account with an ID saved in it that they can reuse for other services.</h2>
+      <a href="/govuk/pta-service-start" class="govuk-button">Start task 2</a>
+      <details class="govuk-details govuk-!-margin-bottom-0" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
             Links
@@ -144,12 +145,12 @@
           <h4 class="govuk-heading-s govuk-!-margin-top-4">Service - Personal Tax Account</h4>
         </div>
       </details>
+      </div>
 
-
-      <h2 class="govuk-heading-m">Journey 3</h2>
-      <p>User has a GOV.UK account and has granted access to their proof of identity in the past.</p>
-      <a href="#" class="govuk-button">Start journey 3</a>
-      <details class="govuk-details" data-module="govuk-details">
+      <div class="task-block">
+      <h2 class="govuk-heading-s">3. User has a GOV.UK account and has granted access to their proof of identity in the past.</h2>
+      <a href="/notify/saved-id" class="govuk-button">Start task 3</a>
+      <details class="govuk-details govuk-!-margin-bottom-0" data-module="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
             Links
@@ -159,7 +160,7 @@
         <ul class="govuk-list">
           <h4 class="govuk-heading-s">Email</h4>
           <li>
-            <a href="#">Email - You've saved proof of identity to your account</a>
+            <a href="/notify/saved-id">Email - You've saved proof of identity to your account</a>
           </li>
           <h4 class="govuk-heading-s govuk-!-margin-top-4">Authentication</h4>
           <li>
@@ -189,6 +190,37 @@
           </li>
         </div>
       </details>
+      </div>
+      </div>
+      
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Email inbox</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Subject</th>
+            <th scope="col" class="govuk-table__header">From</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/notify/email-code" class="govuk-link--no-visited-state">Your security code for your GOV.UK account</a></th>
+            <td class="govuk-table__cell">GOV.UK account</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/notify/welcome" class="govuk-link--no-visited-state">You’ve created your GOV.UK account</a></th>
+            <td class="govuk-table__cell">GOV.UK account</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/notify/saved-id" class="govuk-link--no-visited-state">You’ve saved your proof of identity</a></th>
+            <td class="govuk-table__cell">GOV.UK account</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="/notify/dbs-application" class="govuk-link--no-visited-state">Your basic DBS check application</a></th>
+            <td class="govuk-table__cell">The Disclosure and Barring service</td>
+          </tr>
+        </tbody>
+      </table>
+
 
     </div>
   </div>
