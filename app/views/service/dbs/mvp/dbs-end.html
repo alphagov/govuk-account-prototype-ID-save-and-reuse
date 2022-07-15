@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a basic DBS check
+{% endblock %}
+
+{% block header %}
+{% include "../../_includes/header-dbs-mvp.html" %}
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "../../../_includes/phase-banner.html" %}
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form action="/index" method="post">
+
+      <h1 class="govuk-heading-l">End of task 1</h1>
+
+      <p>We've removed the steps that the DBS service requires for this research session.</p>
+
+      <p class="govuk-body">Imagine that you have shared:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>all your addresses for the last 5 years and the dates you lived there</li>
+        <li>your National Insurance number</li>
+        <li>your driving licence (if you have one)</li>
+      </ul>
+
+      <p>Some of the information you provided as part of proving your identity may be reused so you do not have to give the same details again.</p>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
+  </div>
+
+</div>
+{% endblock %}
