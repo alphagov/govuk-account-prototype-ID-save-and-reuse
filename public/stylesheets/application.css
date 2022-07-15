@@ -9984,17 +9984,28 @@ html.no-scroll {
 .pta-card-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .pta-card {
   background-color: #f3f2f1;
   border: 1px solid #b1b4b6;
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
+  flex: 33%;
+  max-width: 170px;
+}
+
+.pta-card:last-child {
+  margin-right: 0px;
 }
 
 @media (max-width: 800px) {
   .pta-card-container {
     flex-direction: column;
+  }
+
+  .pta-card {
+    margin-bottom: 20px;
   }
 }
