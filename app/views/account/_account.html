@@ -13,12 +13,12 @@
   serviceUrl: "/account/index" if accountShow,
   navigation: ([
     {
-      href: "/account/index-2" if task2 else "/account/index" ,
+      href: "/account/index-2" if task3 else "/account/index" ,
       text: "Account home",
       active: true if (current == 'home')
     },
     {
-      href: "/account/manage-account-2" if task2 else "/account/manage-account",
+      href: "/account/manage-account-2" if task3 else "/account/manage-account",
       text: "Account settings",
       active: true if (current == 'manage')
     },

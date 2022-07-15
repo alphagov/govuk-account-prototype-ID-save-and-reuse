@@ -60,9 +60,7 @@ containerClasses: "govuk-width-container"
 
     <h2 class="govuk-heading-m">What you'll need</h2>
 
-    <p>You might need to create an account and prove your identity before you can apply for a basic DBS check.</p>
-
-    <p>You’ll also need:</p>
+    <p>To apply for a basic DBS check you’ll need:</p>
 
     <ul class="govuk-list govuk-list--bullet">
       <li>all your addresses for the last 5 years and the dates you lived there</li>
@@ -78,6 +76,9 @@ containerClasses: "govuk-width-container"
       <div class="govuk-form-group">
 
         <h2 class="govuk-heading-m">Apply online</h2>
+
+        <p>You’ll need a GOV.UK account to prove your identity and to apply for a basic DBS check online. If you do not have a GOV.UK account, you’ll be able to create one.</p>
+
         <p>The service is available from 8am to 11:30pm.</p>
 
         <input class="govuk-input" id="service" name="service" type="hidden" value="dbs">
@@ -91,57 +92,8 @@ containerClasses: "govuk-width-container"
       </div>
     </form>
 
-    {% if data['devMode'] === 'true' %}
-    {# DEVMODE SCENARIOS #}
-
-    <details class="nhsuk-details dev-mode govuk-!-margin-bottom-5" role="group">
-      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="true">
-        <span class="nhsuk-details__summary-text">
-          Continue with testing scenario
-        </span>
-      </summary>
-      <div class="nhsuk-details__text">
-        <h4>Skip links</h4>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>
-            <a href="/pyi/mvp/start">Skip to PYI</a>
-          </li>
-          <li>
-            <a href="/pyi/mvp/kbv-start">Skip to KBVs</a>
-          </li>
-        </ul>
-        <h4>KBV errors</h4>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>
-            <a href="service-start?journey=PYI-MVP&pyikbv=Q00016,Q00042,Q00000">Fails after the first 2 questions</a>
-          </li>
-          <li>
-            <a href="service-start?journey=PYI-MVP&pyikbv=Q00016,Q00042,Q00068,Q00050,Q00000">Fails after the first 4 questions</a>
-          </li>
-        </ul>
-      </div>
-    </details>
-    {% endif %}
-
     <div id="before-you-start">
-      <h2 class="govuk-heading-m">Before you start</h2>
-
       <div class="gem-c-govspeak govuk-govspeak " data-module="govspeak">
-
-        <p>Make sure a basic <abbr title="Disclosure and Barring Service">DBS</abbr> check is the correct one for you. For certain roles, your employer may need to apply for a higher level of criminal record check.</p>
-
-        <p><a href="javascript:void(0)">Find out if you need a basic <abbr title="Disclosure and Barring Service">DBS</abbr> check</a> or ask your employer if you’re not sure.</p>
-
-        <h2 class="govuk-heading-m">How to pay</h2>
-
-        <p>You can pay for a basic <abbr title="Disclosure and Barring Service">DBS</abbr> check yourself or you can get someone to pay for you - for example, an employer or relative.</p>
-
-        <p>You can pay with a debit or credit card. You can also use Google Pay or Apple Pay.</p>
-
-        <p>If you pay the fee yourself, you need to pay it when you apply.</p>
-
-        <p>If someone else pays, they must pay the fee within 10 days of your application being submitted.</p>
-
         <h2 class="govuk-heading-m">Get help to use the online service</h2>
 
         <p>If you need support to apply online, call the <abbr title="Disclosure and Barring Service">DBS</abbr> helpline on 03000 200 190 and select option 2 and then option 1.</p>
@@ -149,15 +101,6 @@ containerClasses: "govuk-width-container"
         <h2 class="govuk-heading-m">Other ways to apply</h2>
 
         <p>You can also choose to apply through other companies. <abbr title="Disclosure and Barring Service">DBS</abbr> has a <a href="javascript:void(0)">list of companies</a> you can apply through.</p>
-
-        <h2 class="govuk-heading-m">Requesting your police record</h2>
-
-        <p>You’ll need to <a href="javascript:void(0)">request a police record</a> instead if:</p>
-
-        <ul class="govuk-list govuk-list--bullet">
-          <li>you’re applying for certain visas</li>
-          <li>you want to see your police file without receiving a certificate - this will show up any warnings or cautions that are not on your official criminal record</li>
-        </ul>
 
         <h2 class="govuk-heading-m">Transgender applications</h2>
 
