@@ -40,3 +40,21 @@ $govuk-assets-path: '/govuk/assets/';
   padding-top: 15px;
   margin-bottom: 40px;
 }
+
+.pta-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pta-card {
+  background-color: #f3f2f1;
+  border: 1px solid #b1b4b6;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .pta-card-container {
+    flex-direction: column;
+  }
+}
