@@ -27,7 +27,8 @@ Enter your address
             Enter your address
           </h1>
         </legend>
-
+        
+        <!-- removed postcode lookup
         <p>
           <span class="govuk-!-margin-bottom-1 govuk-!-display-block">Postcode</span>
           <strong>{{ data['address-postcode-current'] or 'LS1 3BE'}}</strong>
@@ -36,6 +37,7 @@ Enter your address
             <span class="govuk-visually-hidden">your postcode</span>
           </a>
         </p>
+        -->
 
         <!-- subBuildingName-->
 
@@ -97,6 +99,16 @@ Enter your address
           name: "address-city-current"
         }) }}
 
+        {{ govukInput({
+          label: {
+            text: "Postcode"
+          },
+          classes: "govuk-input--width-10",
+          id: "address-postcode",
+          name: "address-postcode",
+          autocomplete: "postal-code"
+        }) }}
+
         <!-- yearFrom-->
 
         {{ govukDateInput({
@@ -120,6 +132,7 @@ Enter your address
             }
           ]
         }) }}
+
 
       </fieldset>
 
