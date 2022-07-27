@@ -24,7 +24,7 @@ Sign in or create a GOV.UK account
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <form action="/auth/v9/create-email" method="post" class="form">
-      <h1 class="govuk-heading-l">Create a GOV.UK account or sign in
+      <h1 class="govuk-heading-l">Sign in or create a GOV.UK account
         {% if data.prototype['serviceType'] === 'identity' %}
         <!-- to prove your identity -->
         {% elif data.prototype['serviceType'] === 'save' %}
@@ -40,12 +40,18 @@ Sign in or create a GOV.UK account
         <li>a UK mobile phone number</li>
       </ul>
 
-      <button class="govuk-button" style="margin-bottom: 20px;">
-      <!--<img src="/public/images/govuk-crown.svg" class="sso-crown__icon-button" alt="GOV.UK Crown icon">-->
-        Create a GOV.UK account
-      </button>
+        <div class="govuk-button-group">
+          {{ govukButton({
+            text: "Create a GOV.UK account",
+            href: "/auth/v9/create-email"
+          }) }}
 
-      <p class="govuk-body">If you already have a GOV.UK account you can <a href="signin-email" class="govuk-link">sign in</a>.</p>
+          {{ govukButton({
+            text: "Sign in",
+            classes: "govuk-button--secondary",
+            href: "/auth/v9/signin-email"
+          }) }}
+        </div>
 
       <details class="govuk-details" data-module="govuk-details">
         <summary class="govuk-details__summary">
