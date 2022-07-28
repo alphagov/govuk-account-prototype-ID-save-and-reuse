@@ -1,5 +1,6 @@
 {% set hideAccountMenu = true %}
 {% set current = "manage" %}
+{% set task3 = true %}
 {% block pageTitle %}
   GOV.UK account settings - GOV.UK account - GOV.UK
 {% endblock %}
@@ -8,13 +9,33 @@
 
 <div class="xpl-section-inner">
 
-<a href="/account/manage-account" class="govuk-back-link">Back</a>
+<a href="/account/manage-account-2" class="govuk-back-link">Back</a>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          You’ve deleted your proof of identity
+        </h3>
+        <p>You’ll need to answer questions to prove your identity next time a service needs to check who you are. </p>
+      </div>
+    </div>
 
     <h1 class="govuk-heading-l govuk-!-margin-top-4">Your proof of identity</h1>
 
-    <div class="govuk-!-margin-bottom-8">
     <h2 class="govuk-heading-m govuk-!-margin-top-4">Information you’ve provided to prove your identity</h2>
 
+    {{ govukInsetText({
+      text: "There's no proof of identity information saved to your GOV.UK account."
+    }) }}
+
+    <p>You’ll be able to prove your identity and save it next time you use a service that needs to check who you are.</p>
+
+    <!--
     <p>Your account checks this information to confirm your identity every time you use a service that needs it.</p>
 
     <table class="govuk-table">
@@ -35,7 +56,7 @@
         </tr>
       </tbody>
     </table>
-  
+    
     <p>You may need to answer some more identity  questions next time if:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>
@@ -46,9 +67,8 @@
       </li>
     </ul>
     <p class="govuk-body govuk-link"><a href="delete-id">Delete this information from your account</a></p>
-  </div>
+    -->
 
-  <div class="govuk-!-margin-bottom-8">
     <h3 class="govuk-heading-m">How you’ve used your saved proof of identity</h3>
     <p class="govuk-body">Your GOV.UK account has confirmed your identity to the following services.</p>
     <table class="govuk-table">
@@ -69,8 +89,7 @@
         </tr>
       </tbody>
     </table>
-    <p class="govuk-body">You can <a href="/account/account-activity">view all of your account activity</a>.</p> 
-  </div>
+    <p class="govuk-body">You can <a href="/account/account-activity-2">view all of your account activity</a>.</p> 
 
 </div>
 
